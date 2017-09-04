@@ -1,0 +1,14 @@
+<script>
+const userState = {
+    name: 'guest'
+};
+
+const userReducer = (state = userState, action) => {
+    switch (action.type) {
+        case 'UPDATE_USER_NAME':
+        return Object.assign({}, state, {name: action.name})
+        default:
+        return state;
+    }
+}
+</script>

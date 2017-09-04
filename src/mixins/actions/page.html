@@ -1,0 +1,14 @@
+<script>
+const PageActions = Parent => class PageActions extends Parent {
+    static get actions() {
+        return {
+            updatePage(name) {
+                return {
+                    type: 'UPDATE_PAGE',
+                    name
+                }
+            }
+        }
+    }
+}
+</script>

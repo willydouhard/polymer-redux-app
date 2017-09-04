@@ -1,0 +1,14 @@
+<script>
+const UserActions = Parent => class UserActions extends Parent {
+    static get actions() {
+        return {
+            updateName(name) {
+                return {
+                    type: 'UPDATE_USER_NAME',
+                    name
+                }
+            }
+        }
+    }
+}
+</script>

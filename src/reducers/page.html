@@ -1,0 +1,14 @@
+<script>
+const pageState = {
+    name: 'view1'
+};
+
+const pageReducer = (state = pageState, action) => {
+    switch (action.type) {
+        case 'UPDATE_PAGE':
+        return Object.assign({}, state, {name: action.name})
+        default:
+        return state;
+    }
+}
+</script>
